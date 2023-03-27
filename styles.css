@@ -1,0 +1,115 @@
+*{
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 5.5rem;
+    text-shadow: 3px 3px 0px #ff0000, -3px -3px 0px #00b7ff;
+}
+
+#info{
+    margin-top: 4rem;
+    /* font-weight: 500; */
+    font-size: 1.5rem;
+}
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: .5px solid rgb(144, 144, 144);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    /* border: 20px solid rgb(2, 2, 4); */
+    box-sizing: border-box;
+
+    border: 5px solid #00b7ff; 
+    outline: 5px solid rgb(0, 0, 0);
+    box-shadow: 0 0 0 9px #ff0000;
+}
+
+
+
+.cross {
+    height: 80px;
+    width: 80px;
+    position: relative;
+    transform: rotate(45deg);
+}
+
+.cross:before, .cross:after{
+    content: "";
+    position: absolute;
+    background-color: black;
+}
+
+.cross:before {
+    left: 50%;
+    width: 7%;
+    margin-left: -5%;
+    height: 100%;
+
+    box-shadow: 0 0 0 5px #ff0000;
+}
+
+.cross:after {
+    top: 50%;
+    height: 6%;
+    margin-top: -5%;
+    margin-left: -5%;
+    width: 100%;
+
+    border: 5px solid rgb(0, 183, 255); 
+    
+}
+
+
+.lightmode {
+    background-color: white;
+}
+
+.darkmode {
+    background-color: black;
+}
+
+.lightmode-text {
+    color: black;
+}
+
+.darkmode-text {
+    color: white;
+}
+
+.lightmode-border {
+    border: 1px solid black;
+ }
+ 
+.darkmode-border {
+    border: 1px solid white;
+}
+
+#gameboard{
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    border: .5px solid gray;
+}
